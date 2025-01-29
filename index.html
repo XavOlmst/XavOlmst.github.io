@@ -1,1 +1,314 @@
-Hello World
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xavier Olmstead - Game Programmer</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background-color: #1a202c;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header styles */
+        header {
+            background-color: rgba(26, 32, 44, 0.9);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 1rem 0;
+        }
+
+            nav ul li {
+                margin: 0 1rem;
+            }
+
+                nav ul li a {
+                    color: #ffffff;
+                    text-decoration: none;
+                    transition: color 0.3s ease;
+                }
+
+                    nav ul li a:hover {
+                        color: #48bb78;
+                    }
+
+        /* Section styles */
+        section {
+            padding: 4rem 0;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        /* Hero section */
+        #home {
+            background-image: url('hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+            #home h1 {
+                font-size: 3rem;
+                margin-bottom: 1rem;
+            }
+
+            #home p {
+                font-size: 1.5rem;
+                margin-bottom: 2rem;
+            }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #48bb78;
+            color: #ffffff;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+            .cta-button:hover {
+                background-color: #38a169;
+            }
+
+        /* Skills section */
+        #skills {
+            background-color: #2d3748;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-item {
+            text-align: center;
+        }
+
+        .skill-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Projects section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background-color: #2d3748;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+            .project-card img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+            }
+
+        .project-card-content {
+            padding: 1.5rem;
+        }
+
+        .project-card h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .project-card p {
+            margin-bottom: 1rem;
+        }
+
+        .project-card a {
+            color: #48bb78;
+            text-decoration: none;
+        }
+
+        /* About section */
+        #about {
+            background-color: #2d3748;
+        }
+
+        /* Contact section */
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+            .contact-links a {
+                color: #48bb78;
+                font-size: 2rem;
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
+
+                .contact-links a:hover {
+                    color: #38a169;
+                }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="container">
+                <h1>Xavier Olmstead</h1>
+                <p>Game Programmer & Developer</p>
+                <a href="#projects" class="cta-button">View My Work</a>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon">🎮</div>
+                        <h3>Unreal Engine</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">🕹️</div>
+                        <h3>Unity</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">💻</div>
+                        <h3>C++</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">📱</div>
+                        <h3>C# / .NET</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">🐍</div>
+                        <h3>Python</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">🖥️</div>
+                        <h3>OpenGL</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="cosmic-crusade.jpg" alt="Cosmic Crusade">
+                        <div class="project-card-content">
+                            <h3>Cosmic Crusade</h3>
+                            <p>A space-themed RPG developed in Unreal Engine</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="pixel-platformer.jpg" alt="Pixel Platformer">
+                        <div class="project-card-content">
+                            <h3>Pixel Platformer</h3>
+                            <p>A retro-style platformer game built with Unity</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="vr-escape-room.jpg" alt="VR Escape Room">
+                        <div class="project-card-content">
+                            <h3>VR Escape Room</h3>
+                            <p>A virtual reality escape room experience</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Hi, I'm Xavier Olmstead, a passionate game programmer with 5 years of experience in the industry. I specialize in creating immersive gameplay experiences and optimizing game performance.</p>
+                <p>My journey in game development started with modding existing games, which led me to pursue a degree in Computer Science with a focus on game programming. Since then, I've worked on various projects ranging from indie mobile games to AAA console titles.</p>
+                <p>When I'm not coding, you can find me exploring new game mechanics, participating in game jams, or contributing to open-source game development tools.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <p>Interested in collaborating or have a project in mind? Feel free to reach out!</p>
+                <div class="contact-links">
+                    <a href="mailto:xavier.olmstead@example.com" title="Email">📧</a>
+                    <a href="https://linkedin.com/in/xavier-olmstead" target="_blank" rel="noopener noreferrer" title="LinkedIn">💼</a>
+                    <a href="https://github.com/xavier-olmstead" target="_blank" rel="noopener noreferrer" title="GitHub">🐙</a>
+                    <a href="https://twitter.com/xavier_olmstead" target="_blank" rel="noopener noreferrer" title="Twitter">🐦</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
